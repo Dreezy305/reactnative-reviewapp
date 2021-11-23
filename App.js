@@ -1,6 +1,7 @@
 import { StatusBar } from "expo-status-bar";
 import React, { useState } from "react";
 import * as Font from "expo-font";
+import { AppLoading } from "expo";
 import Home from "./screens/home";
 
 const getFonts = () =>
@@ -11,6 +12,12 @@ const getFonts = () =>
 
 export default function App() {
   const [fontLoaded, setFontLoaded] = useState(false);
+
+  if (fontLoaded) {
+    return <Home />;
+  } else {
+    <AppLoading startAsync={ }/>;
+  }
 
   return <Home />;
 }
