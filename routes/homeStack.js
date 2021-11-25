@@ -8,18 +8,12 @@ const screens = {
     screen: Home,
     navigationOptions: {
       title: "Home screen",
-      // headerStyle: {
-      //   backgroundColor: "#eee",
-      // },
     },
   },
   ReviewDetail: {
     screen: ReviewDetail,
     navigationOptions: {
       title: "Review Details",
-      // headerStyle: {
-      //   backgroundColor: "#f4511e",
-      // },
     },
   },
 };
