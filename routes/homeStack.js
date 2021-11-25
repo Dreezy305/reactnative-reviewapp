@@ -1,5 +1,5 @@
-import { NavigationContainer } from "@react-navigation/native";
-import { createNativeStackNavigator } from "@react-navigation/native-stack";
+import { createAppContainer } from "react-navigation";
+import { createStackNavigator } from "react-navigation-stack";
 import Home from "../screens/home";
 import ReviewDetail from "../screens/reviewDetail";
 
@@ -12,6 +12,6 @@ const screens = {
   },
 };
 
-const HomeStack = createNativeStackNavigator(screens);
+const HomeStack = createStackNavigator(screens);
 
-export default NavigationContainer(HomeStack);
+export default createAppContainer(HomeStack);
