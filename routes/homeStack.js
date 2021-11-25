@@ -5,12 +5,23 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import Home from "../screens/home";
 import ReviewDetail from "../screens/reviewDetail";
 
-export default function HomeStack() {
-  return (
-    <View>
-      <Text></Text>
-    </View>
-  );
-}
+const screens = {
+  Home: {
+    screen: Home,
+  },
+  ReviewDetail: {
+    screen: ReviewDetail,
+  },
+};
 
-const styles = StyleSheet.create({});
+const HomeStack = createNativeStackNavigator(screens);
+
+// export default function HomeStack() {
+//   return (
+//     <View>
+//       <Text></Text>
+//     </View>
+//   );
+// }
+
+// const styles = StyleSheet.create({});
