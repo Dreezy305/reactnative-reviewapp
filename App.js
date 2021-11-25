@@ -1,7 +1,7 @@
 import { StatusBar } from "expo-status-bar";
 import React, { useState } from "react";
 import AppLoading from "expo-app-loading";
-import Navigator from "./routes/homeStack";
+import Navigator from "./routes/drawer";
 import { useFonts } from "expo-font";
 
 export default function App() {
