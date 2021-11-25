@@ -10,8 +10,6 @@ export default function App() {
     "nunito-bold": require("./assets/fonts/Nunito-Bold.ttf"),
   });
 
-  // const Stack = createStackNavigator();
-
   if (fontsLoaded) {
     return <Navigator />;
   } else {
