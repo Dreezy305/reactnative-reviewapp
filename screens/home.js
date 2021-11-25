@@ -26,17 +26,22 @@ export default function Home({ navigation }) {
       title: "Final fantasy",
       rating: 3,
       body: "lorem ipsum",
-      key: "1",
+      key: "3",
     },
   ]);
-  const pressHandler = () => {
-    // navigation.navigate("ReviewDetail");
-    navigation.push("ReviewDetail");
-  };
 
   return (
     <View style={globalStyles.container}>
-      <Text style={globalStyles.titleText}>Home screen</Text>
+      <FlatList
+        data={reviews}
+        renderItem={({ item }) => (
+          <TouchableOpacity
+            onPress={() => navigation.navigate("ReviewDetail", item)}
+          >
+            <Text style={globalStyles.titleText}>{item.title}</Text>
+          </TouchableOpacity>
+        )}
+      />
     </View>
   );
 }
