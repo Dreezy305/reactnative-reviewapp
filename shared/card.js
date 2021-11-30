@@ -10,4 +10,7 @@ export default function Card(props) {
   );
 }
 
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create({
+  card: {},
+  cardContent: {},
+});
