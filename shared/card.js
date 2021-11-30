@@ -18,6 +18,12 @@ const styles = StyleSheet.create({
     backgroundColor: "#fff",
     shadowColor: "#333",
     shadowOpacity: 0.3,
+    shadowRadius: 2,
+    marginHorizontal: 4,
+    marginVertical: 6,
   },
-  cardContent: {},
+  cardContent: {
+    marginHorizontal: 18,
+    marginVertical: 20,
+  },
 });
