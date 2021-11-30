@@ -7,7 +7,7 @@ export default function Header() {
     <View style={styles.header}>
       {/* menu icon */}
       <View>
-        <Text style={styles.headerText}></Text>
+        <Text style={styles.headerText}>Reviews Application</Text>
       </View>
     </View>
   );
