@@ -20,6 +20,8 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     alignItems: "center",
     justifyContent: "center",
+    backgroundColor: "red",
+    // paddingTop: 20,
   },
   headerText: {
     fontWeight: "bold",
