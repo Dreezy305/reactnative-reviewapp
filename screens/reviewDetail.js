@@ -4,6 +4,8 @@ import Card from "../shared/card";
 import { images } from "../styles/global";
 
 export default function ReviewDetail({ navigation }) {
+  const rating = navigation.getParam("rating");
+
   return (
     <View style={styles.container}>
       <Card>
@@ -12,7 +14,7 @@ export default function ReviewDetail({ navigation }) {
         {/* <Text>{navigation.getParam("rating")}</Text> */}
         <View>
           <Text>Rating: </Text>
-          <Image source={images.ratings} />
+          <Image source={images.ratings[rating]} />
         </View>
       </Card>
     </View>
