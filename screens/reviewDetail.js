@@ -1,5 +1,5 @@
 import React from "react";
-import { StyleSheet, Text, View, Button } from "react-native";
+import { StyleSheet, Text, View, Image } from "react-native";
 import Card from "../shared/card";
 
 export default function ReviewDetail({ navigation }) {
@@ -9,6 +9,10 @@ export default function ReviewDetail({ navigation }) {
         <Text>{navigation.getParam("title")}</Text>
         <Text>{navigation.getParam("body")}</Text>
         {/* <Text>{navigation.getParam("rating")}</Text> */}
+        <View>
+          <Text>Rating: </Text>
+          <Image source={require("../assets/rating-1.png")} />
+        </View>
       </Card>
     </View>
   );
