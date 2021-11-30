@@ -4,7 +4,7 @@ import { StyleSheet, Text, View } from "react-native";
 import { NavigationContainer } from "@react-navigation/native";
 
 export default function Header() {
-  console.log(navigation);
+  //   console.log(navigation);
   const openMenu = () => {
     // NavigationContainer.openDrawer();
   };
@@ -35,5 +35,8 @@ const styles = StyleSheet.create({
     color: "#333",
     letterSpacing: 1,
   },
-  icon: {},
+  icon: {
+    position: "absolute",
+    left: -2,
+  },
 });
