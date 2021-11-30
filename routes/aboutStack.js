@@ -6,8 +6,10 @@ import About from "../screens/about";
 const screens = {
   About: {
     screen: About,
-    navigationOptions: {
-      headerTitle: () => <Header />,
+    navigationOptions: ({ navigation }) => {
+      return {
+        headerTitle: () => <Header navigation={navigation} />,
+      };
     },
   },
 };

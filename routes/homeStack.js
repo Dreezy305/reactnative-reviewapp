@@ -7,10 +7,10 @@ import Header from "../shared/header";
 const screens = {
   Home: {
     screen: Home,
-    navigationOptions: ({ navigation}) => {
-      return  {
-        headerTitle: () => <Header navigation={ navigation}/>
-    },
+    navigationOptions: ({ navigation }) => {
+      return {
+        headerTitle: () => <Header navigation={navigation} />,
+      };
     },
   },
   ReviewDetail: {
