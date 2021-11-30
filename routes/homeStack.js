@@ -9,7 +9,9 @@ const screens = {
     screen: Home,
     navigationOptions: ({ navigation }) => {
       return {
-        headerTitle: () => <Header navigation={navigation} />,
+        headerTitle: () => (
+          <Header navigation={navigation} title="Review Application" />
+        ),
       };
     },
   },
