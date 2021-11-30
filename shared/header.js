@@ -1,11 +1,17 @@
 import React from "react";
 import { MaterialIcons } from "@expo/vector-icons";
 import { StyleSheet, Text, View } from "react-native";
+import { NavigationContainer } from "@react-navigation/native";
 
 export default function Header() {
+  console.log(navigation);
+  const openMenu = () => {
+    // NavigationContainer.openDrawer();
+  };
   return (
     <View style={styles.header}>
       {/* menu icon */}
+      <MaterialIcons name="menu" size={28} color="black" style={styles.icon} />
       <View>
         <Text style={styles.headerText}>Reviews Application</Text>
       </View>
@@ -29,4 +35,5 @@ const styles = StyleSheet.create({
     color: "#333",
     letterSpacing: 1,
   },
+  icon: {},
 });
