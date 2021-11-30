@@ -1,17 +1,22 @@
 import React from "react";
 import { MaterialIcons } from "@expo/vector-icons";
 import { StyleSheet, Text, View } from "react-native";
-import { NavigationContainer } from "@react-navigation/native";
 
-export default function Header() {
-  //   console.log(navigation);
+export default function Header({ navigation }) {
+  console.log(navigation);
   const openMenu = () => {
-    // NavigationContainer.openDrawer();
+    navigation.openDrawer();
   };
   return (
     <View style={styles.header}>
       {/* menu icon */}
-      <MaterialIcons name="menu" size={28} color="black" style={styles.icon} />
+      <MaterialIcons
+        name="menu"
+        size={28}
+        color="black"
+        style={styles.icon}
+        onPress={openMenu}
+      />
       <View>
         <Text style={styles.headerText}>Reviews Application</Text>
       </View>
