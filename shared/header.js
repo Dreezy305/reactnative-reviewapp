@@ -2,7 +2,7 @@ import React from "react";
 import { MaterialIcons } from "@expo/vector-icons";
 import { StyleSheet, Text, View } from "react-native";
 
-export default function Header({ navigation }) {
+export default function Header({ navigation, title }) {
   console.log(navigation);
   const openMenu = () => {
     navigation.openDrawer();
@@ -18,7 +18,7 @@ export default function Header({ navigation }) {
         onPress={openMenu}
       />
       <View>
-        <Text style={styles.headerText}>Reviews Application</Text>
+        <Text style={styles.headerText}>{title}</Text>
       </View>
     </View>
   );
