@@ -31,10 +31,11 @@ export default function Home({ navigation }) {
       key: "3",
     },
   ]);
+  const [modalOpen, setModalOpen] = useState(false);
 
   return (
     <View style={globalStyles.container}>
-      <Modal visible={true}>
+      <Modal visible={false}>
         <View>
           <Text>Hello from the modal</Text>
         </View>
