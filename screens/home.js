@@ -35,7 +35,9 @@ export default function Home({ navigation }) {
   return (
     <View style={globalStyles.container}>
       <Modal visible={true}>
-        <View></View>
+        <View>
+          <Text>Hello from the modal</Text>
+        </View>
       </Modal>
       <FlatList
         data={reviews}
