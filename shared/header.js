@@ -8,7 +8,10 @@ export default function Header({ navigation, title }) {
     navigation.openDrawer();
   };
   return (
-    <View style={styles.header}>
+    <ImageBackground
+      source={require("../assets/game_bg.png")}
+      style={styles.header}
+    >
       {/* menu icon */}
       <MaterialIcons
         name="menu"
@@ -24,7 +27,7 @@ export default function Header({ navigation, title }) {
         />
         <Text style={styles.headerText}>{title}</Text>
       </View>
-    </View>
+    </ImageBackground>
   );
 }
 
