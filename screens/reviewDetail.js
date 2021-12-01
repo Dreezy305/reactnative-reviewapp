@@ -20,6 +20,7 @@ export default function ReviewDetail({ navigation }) {
     </View>
   );
 }
+// video 28
 
 const styles = StyleSheet.create({
   container: {
