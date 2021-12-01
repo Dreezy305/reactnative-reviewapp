@@ -8,6 +8,7 @@ import {
   Modal,
 } from "react-native";
 import { globalStyles } from "../styles/global";
+import { MaterialIcons } from "@expo/vector-icons";
 import Card from "../shared/card";
 
 export default function Home({ navigation }) {
@@ -35,7 +36,7 @@ export default function Home({ navigation }) {
 
   return (
     <View style={globalStyles.container}>
-      <Modal visible={false}>
+      <Modal visible={modalOpen}>
         <View>
           <Text>Hello from the modal</Text>
         </View>
