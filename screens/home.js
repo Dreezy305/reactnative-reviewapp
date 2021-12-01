@@ -5,6 +5,7 @@ import {
   View,
   FlatList,
   TouchableOpacity,
+  Modal,
 } from "react-native";
 import { globalStyles } from "../styles/global";
 import Card from "../shared/card";
@@ -33,6 +34,9 @@ export default function Home({ navigation }) {
 
   return (
     <View style={globalStyles.container}>
+      <Modal visible={true}>
+        <View></View>
+      </Modal>
       <FlatList
         data={reviews}
         renderItem={({ item }) => (
