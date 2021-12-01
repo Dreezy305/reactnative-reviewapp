@@ -1,6 +1,6 @@
 import React from "react";
 import { MaterialIcons } from "@expo/vector-icons";
-import { StyleSheet, Text, View, Image } from "react-native";
+import { StyleSheet, Text, View, Image, ImageBackground } from "react-native";
 
 export default function Header({ navigation, title }) {
   console.log(navigation);
@@ -35,7 +35,7 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     alignItems: "center",
     justifyContent: "center",
-    backgroundColor: "red",
+    backgroundColor: "grey",
     // paddingTop: 20,
   },
   headerText: {
@@ -48,8 +48,12 @@ const styles = StyleSheet.create({
     position: "absolute",
     left: -2,
   },
+  headerTitle: {
+    flexDirection: "row",
+  },
   headerImage: {
     width: 26,
     height: 26,
+    marginHorizontal: 10,
   },
 });
