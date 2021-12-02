@@ -4,6 +4,8 @@ import { StyleSheet, Text, View, TextInput, Button } from "react-native";
 import { Formik } from "formik";
 import * as Yup from "yup";
 
+const ReviewSchema = Yup.object({});
+
 export default function ReviewForms({ addReview }) {
   return (
     <View style={globalStyles.container}>
