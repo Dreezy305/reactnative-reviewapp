@@ -25,6 +25,7 @@ export const globalStyles = StyleSheet.create({
   errorText: {
     color: "crimson",
     fontWeight: "bold",
+    textAlign: "center",
   },
 });
 
