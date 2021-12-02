@@ -8,9 +8,10 @@ export default function ReviewForms({ addReview }) {
     <View style={globalStyles.container}>
       <Formik
         initialValues={{ title: "", body: "", rating: "" }}
-        onSubmit={(values) => {
+        onSubmit={(values, actions) => {
           console.log(values, "vv1");
           addReview(values);
+          actions.resetForm();
         }}
       >
         {(props) => (
