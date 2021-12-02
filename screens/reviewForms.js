@@ -6,7 +6,7 @@ import { Formik } from "formik";
 export default function ReviewForms() {
   return (
     <View style={globalStyles.container}>
-      <Text></Text>
+      <Formik></Formik>
     </View>
   );
 }
