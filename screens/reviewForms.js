@@ -3,7 +3,7 @@ import { globalStyles } from "../styles/global";
 import { StyleSheet, Text, View } from "react-native";
 import { Formik } from "formik";
 
-export default function reviewForms() {
+export default function ReviewForms() {
   return (
     <View>
       <Text></Text>
