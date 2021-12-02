@@ -19,6 +19,7 @@ export default function ReviewForms({ addReview }) {
     <View style={globalStyles.container}>
       <Formik
         initialValues={{ title: "", body: "", rating: "" }}
+        validationSchema={ReviewSchema}
         onSubmit={(values, actions) => {
           console.log(values, "vv1");
           addReview(values);
