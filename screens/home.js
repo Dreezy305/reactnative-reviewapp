@@ -41,6 +41,7 @@ export default function Home({ navigation }) {
           <Text>Hello from the modal</Text>
         </View>
       </Modal>
+
       <FlatList
         data={reviews}
         renderItem={({ item }) => (
