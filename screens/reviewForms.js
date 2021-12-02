@@ -1,6 +1,6 @@
 import React from "react";
 import { globalStyles } from "../styles/global";
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet, Text, View, TextInput } from "react-native";
 import { Formik } from "formik";
 
 export default function ReviewForms() {
@@ -10,7 +10,17 @@ export default function ReviewForms() {
         initialValues={{ title: "", body: "", rating: "" }}
         onSubmit={(values) => {}}
       >
-        {(props) => <></>}
+        {(props) => (
+          <>
+            <View>
+              <TextInput
+                style={globalStyles.input}
+                placeholder="Review title"
+                onChangeText={props.handleChange("title")}
+              />
+            </View>
+          </>
+        )}
       </Formik>
     </View>
   );
