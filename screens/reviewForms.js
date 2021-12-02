@@ -46,6 +46,8 @@ export default function ReviewForms({ addReview }) {
                 value={props.values.body}
               />
 
+              <Text style={globalStyles.errorText}>{props.errors.body}</Text>
+
               <TextInput
                 style={globalStyles.input}
                 placeholder="Rating (1-5)"
@@ -53,6 +55,8 @@ export default function ReviewForms({ addReview }) {
                 value={props.values.rating}
                 keyboardType="numeric"
               />
+
+              <Text style={globalStyles.errorText}>{props.errors.rating}</Text>
 
               <Button
                 title="submit"
