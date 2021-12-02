@@ -4,7 +4,15 @@ import { StyleSheet, Text, View, TextInput, Button } from "react-native";
 import { Formik } from "formik";
 import * as Yup from "yup";
 
-const ReviewSchema = Yup.object({});
+const ReviewSchema = Yup.object({
+  title: Yup.string().min(4).required(),
+  body: Yup.string().min(8).required(),
+  rating: Yup.string()
+    .required()
+    .test("is-num-1-5", "rating must be a number between 1 to 5", (val) => {
+      return parseInt(val) < 6 && parseInt(val) > 0;
+    }),
+});
 
 export default function ReviewForms({ addReview }) {
   return (
