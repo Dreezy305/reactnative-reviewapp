@@ -35,6 +35,7 @@ export default function ReviewForms() {
                 placeholder="Rating (1-5)"
                 onChangeText={props.handleChange("rating")}
                 value={props.values.rating}
+                keyboardType="numeric"
               />
 
               <Button
