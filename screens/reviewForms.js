@@ -8,7 +8,9 @@ export default function ReviewForms() {
     <View style={globalStyles.container}>
       <Formik
         initialValues={{ title: "", body: "", rating: "" }}
-        onSubmit={(values) => {}}
+        onSubmit={(values) => {
+          console.log(values);
+        }}
       >
         {(props) => (
           <>
@@ -35,7 +37,11 @@ export default function ReviewForms() {
                 value={props.values.rating}
               />
 
-              <Button title="submit" color="maroon" />
+              <Button
+                title="submit"
+                color="maroon"
+                onPress={props.handleSubmit}
+              />
             </View>
           </>
         )}
