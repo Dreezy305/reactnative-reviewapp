@@ -36,11 +36,18 @@ export default function Home({ navigation }) {
 
   return (
     <View style={globalStyles.container}>
-      <Modal visible={modalOpen}>
+      <Modal visible={modalOpen} animationType="slide">
         <View>
+          <MaterialIcons
+            name="close"
+            size={24}
+            onPress={() => setModalOpen(false)}
+          />
           <Text>Hello from the modal</Text>
         </View>
       </Modal>
+
+      <MaterialIcons name="add" size={24} onPress={() => setModalOpen(true)} />
 
       <FlatList
         data={reviews}
