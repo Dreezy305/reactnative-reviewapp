@@ -6,7 +6,12 @@ import { Formik } from "formik";
 export default function ReviewForms() {
   return (
     <View style={globalStyles.container}>
-      <Formik initialValues={{ title: "", body: "", rating: "" }}></Formik>
+      <Formik
+        initialValues={{ title: "", body: "", rating: "" }}
+        onSubmit={(values) => {}}
+      >
+        {(props) => <></>}
+      </Formik>
     </View>
   );
 }
