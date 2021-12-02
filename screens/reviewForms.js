@@ -36,6 +36,8 @@ export default function ReviewForms({ addReview }) {
                 value={props.values.title}
               />
 
+              <Text style={globalStyles.errorText}>{props.errors.title}</Text>
+
               <TextInput
                 multiline
                 style={globalStyles.input}
